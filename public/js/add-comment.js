@@ -1,14 +1,14 @@
 async function postFormHandler(event) {
-  console.log('sending data')
+  console.log("sending data");
   event.preventDefault();
 
   // grabe the comment
-  const comment = document.querySelector('#commentBox').value;
+  const comment = document.querySelector("#commentBox").value;
   // grabe the postId
   // const post_id = document.querySelector('#postId').value;
-  const post_id = window.location.toString().split('/')[
-    window.location.toString().split('/').length - 1
-];
+  const post_id = window.location.toString().split("/")[
+    window.location.toString().split("/").length - 1
+  ];
 
   // this grabs a post content which we dont have/need
   // const post_content = document

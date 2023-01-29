@@ -30,11 +30,11 @@ Post.init(
       }
     },
     image: {
-      type: DataTypes.STRING,
+      type: DataTypes.TEXT,
       allowNull: false,
-      validate: {
-        isUrl: true,
-      },
+      // validate: {
+      //   isUrl: true,
+      // },
     },
     date_created: {
       type: DataTypes.DATE,
