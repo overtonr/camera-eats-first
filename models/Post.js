@@ -18,6 +18,13 @@ Post.init(
         len: [1],
       },
     },
+    image: {
+      type: DataTypes.TEXT,
+      allowNull: false,
+      validate: {
+        isUrl: true,
+      },
+    },
     category: {
       type: DataTypes.STRING,
       allowNull: false,
@@ -28,13 +35,6 @@ Post.init(
       validate: {
         len: [1],
       }
-    },
-    image: {
-      type: DataTypes.TEXT,
-      allowNull: false,
-      // validate: {
-      //   isUrl: true,
-      // },
     },
     date_created: {
       type: DataTypes.DATE,

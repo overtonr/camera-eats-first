@@ -52,6 +52,7 @@ router.get('/post/:id', (req, res) => {
       attributes: [
         'id',
         'content_box',
+        'image',
         'title',
         'category',
         'created_at',

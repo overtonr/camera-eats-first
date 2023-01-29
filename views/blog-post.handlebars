@@ -2,12 +2,7 @@
   <div>
     <div class="container">
       <h2 class="display-4 text-center text-secondary">{{post.title}}</h2>
-      <img src = "{{post.image}}" alt = "post image" class="img-fluid rounded mx-auto d-block head-img" />
-      <p> {{post.image}}
-      </p>
-       {{!-- <img src = "https://i.postimg.cc/W4tsp5yX/kbbq.png" alt = "post image" class="img-fluid rounded mx-auto d-block head-img" /> --}}
-      <script>console.log(post.image);</script>
-
+      <img src = "{{post.image}}" alt = "post image" class="img-fluid rounded mx-auto d-block head-img"  width = "600"/>
       <p class="text-center lead">{{post.content_box}}</p>
       <p class="font-weight-light text-right">Author: {{post.user.username}}</p>
       {{!-- <p class="font-weight-light text-right">Date Created:{{post.date_created}}</p> --}}

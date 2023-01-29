@@ -11,6 +11,7 @@ router.get('/', (req,res) => {
             'id',
             'content_box',
             'title',
+            'image',
             'create_at',
           ],
           //order the post from most recent to least
@@ -47,7 +48,7 @@ router.get('/:id', (req, res) => {
             //id which is from the values parsed from the URL path.
             id: req.params.id
         },
-        attributes: ['id','title', 'content_box', 'user_id', 'created_at'],
+        attributes: ['id','title', 'image', 'content_box', 'user_id', 'created_at'],
         include: [
             {
             model: User,

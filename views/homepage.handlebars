@@ -10,8 +10,8 @@
   <input class="form-control mr-sm-2" type="search" placeholder="Insert a category">
   <button class="btn btn-outline-white my-sm-0" type="submit">Search Posts</button>
 </form> --}}
-<div class="row">
+<div class="row col-sm pl-5 ml-4">
   {{#each posts as |post|}}
-  <div class="col-sm"><a href="/post/{{post.id}}"><img src="{{post.image}}" width="400" height="400"></a></div>
+  <div class="m-3"><a href="/post/{{post.id}}"><img src="{{post.image}}" width="400" height="400"></a></div>
   {{/each}}
 </div>
