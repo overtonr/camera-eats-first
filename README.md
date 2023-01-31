@@ -3,7 +3,7 @@
 ![Logo](./images/logo.png)
 
 
- Deployed Link : [Check out our project!](https://cameraeatsfirst.herokuapp.com/)
+ Deployed Link : [Check out our project!](https://cam-eats-first.herokuapp.com/)
 
 <br>
 
